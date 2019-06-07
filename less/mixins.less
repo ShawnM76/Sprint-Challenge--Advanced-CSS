@@ -1,1 +1,16 @@
 // Mixins Here
+.width-class {
+    width: 100%
+}
+
+.display-flex {
+    display: flex;
+    justify-content: center;
+}
+
+// Parametric Mixin
+.custom-layout(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
